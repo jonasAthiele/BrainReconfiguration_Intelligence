@@ -15,62 +15,61 @@ For all data, timeseries of neural activation were extracted from 200 nodes cove
 ## 4. Structure and Script description
 ### Main analysis
 For the analysis done in the paper the scripts should be run in the following order:
-1.	`get_init_parameters` 
-  - Script for defining parameters for analysis --> can be adapted for modifying the analysis
+1.	`get_init_parameters` - Definition of parameters for analysis --> can be adapted for modifying the analysis
   
   
-2.	`select_subjects` 
-  - Script for the selection of subjects according to data availability and motion exclusion criteria
+2.	`select_subjects` - Selection of subjects according to data availability and motion exclusion criteria
   
-3.	`get_gFactor` (R)
-  - Derive a g-factor from the performance scores of cognitive tests
   
-4.	`get_samples` 
-  - Create samples with absence of family relations between subjects and an equal distribution of intelligence scores via stratified folds
+3.	`get_gFactor` (R) - Derive a g-factor from the performance scores of cognitive tests
   
-5.	`get_FCs` 
-  - Reading preprocessed BOLD-signals, calculating FCs, joining FCs
   
-6.	`get_reconfiguration_wholebrain` 
-  - Script for computing whole-brain reconfiguration scores, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step
-7.	`get_relation_recon_intell_wholebrain` 
-  - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level
+4.	`get_samples` - Create samples with absence of family relations between subjects and an equal distribution of intelligence scores via stratified folds
+ 
+ 
+5.	`get_FCs` - Reading preprocessed BOLD-signals, calculating FCs, joining FCs
+  
+ 
+6.	`get_reconfiguration_wholebrain` - Script for computing whole-brain reconfiguration scores, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step\
+\
+**and/or**\
+\
+`get_reconfiguration_networks` - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step
 
 
-**and/or**
-
-
-6.	`get_reconfiguration_networks` 
-  - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step
-7.	`get_relation_recon_intell_networks` 
-  - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
+7.	`get_relation_recon_intell_wholebrain` (needs preceeding `get_reconfiguration_wholebrain`) - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level\
+\
+**and/or**\
+\
+`get_relation_recon_intell_networks` (needs preceeding `get_reconfiguration_networks`) - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
   
-8.	 `get_hcp_reference_mask` 
-  - Script for computing reference masks for edge-selection in the replication samples
+  
+8.	 `get_hcp_reference_mask` - Script for computing reference masks for edge-selection in the replication samples
   
 ### Replication analysis
 
 For the replication analysis done in the paper the scripts should be run in the following order:
 
-1.	`get_init_parameters_replication` 
-  - Script for defining parameters for analysis
-2.	`select_subjects_replication` 
-  - Script for the selection of subjects according to data availability and motion exclusion criteria
-3.	`get_FCs_replication` 
-  - Reading Preprocessed BOLD-signals, calculating FCs, joining FCs
-4.	`get_reconfiguration_wholebrain_replication` 
-  - Script for computing whole-brain reconfiguration scores, contains filtering of conenctions and computes reconfiguration between connections that remain after filtering step
-5.	`get_relation_recon_intell_wholebrain` (same as in main analysis)
-  - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level 
+1.	`get_init_parameters_replication` - Script for defining parameters for analysis
 
 
-**and/or**
+2.	`select_subjects_replication`  - Script for the selection of subjects according to data availability and motion exclusion criteria
 
 
-4.	`get_reconfiguration_networks_replication` 
-  - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after filtering step
-5.	`get_relation_recon_intell_networks` (same as in main analysis)
-  - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
+3.	`get_FCs_replication` - Reading Preprocessed BOLD-signals, calculating FCs, joining FCs
+
+
+4.	`get_reconfiguration_wholebrain_replication` - Script for computing whole-brain reconfiguration scores, contains filtering of conenctions and computes reconfiguration between connections that remain after filtering step\
+\
+**and/or**\
+\
+`get_reconfiguration_networks_replication` - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after filtering step
+
+5.	`get_relation_recon_intell_wholebrain` (same script as in main analysis, needs preceeding `get_reconfiguration_wholebrain_replication`) - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level\
+\
+**and/or**\
+\
+`get_relation_recon_intell_networks` (same script as in main analysis, needs preceeding `get_reconfiguration_networks_replication`) - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
 
 ### Functions 
 

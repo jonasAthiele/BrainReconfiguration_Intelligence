@@ -48,7 +48,7 @@ For the analysis done in the paper the scripts should be run in the following or
 8.	 `get_hcp_reference_mask` (Matlab)
   - Script for computing reference masks for edge-selection in the replication samples
   
-### For replication analysis
+### Replication analysis
 
 For the replication analysis done in the paper the scripts should be run in the following order:
 

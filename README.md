@@ -8,10 +8,10 @@ If you have questions or trouble with the scripts, feel free to contact me: jona
 We used data provided by the Human Connectome project (1), funded by the National Institute of Health for providing data for our main sample analysis. Data from The Amsterdam Open MRI Collection (2) was used for the replication analyses (PIOP1 and PIOP2 sample).
 All data used in the current study can be accessed online under: https://www.humanconnectome.org/study/hcp-young-adult (HCP), https://doi.org/10.18112/openneuro.ds002785.v2.0.0 (AOMIC-PIOP1), and https://doi.org/10.18112/openneuro.ds002790.v2.0.0 (AOMIC-PIOP2).
 ## 3. Preprocessing
-We used the minimally preprocessed HCP fMRI data (1) and implemented further preprocessing comprising a nuisance regression strategy with 24 head motion parameters, eight mean signals from white matter and cerebrospinal fluid, and four global signals (3). For task data, basis-set task regressors (4) were used simultaneously with the nuisance regressors to remove mean task-evoked activations.
+We used the minimally preprocessed HCP fMRI data (3) and implemented further preprocessing comprising a nuisance regression strategy with 24 head motion parameters, eight mean signals from white matter and cerebrospinal fluid, and four global signals (4). For task data, basis-set task regressors (5) were used simultaneously with the nuisance regressors to remove mean task-evoked activations.
 Code for the further preprocessing steps is available here: https://github.com/faskowit/app-fmri-2-mat
-For the replication the data of The Amsterdam Open MRI Collection was downloaded in the minimal preprocessed form (using fMRIPrep version 1.4.1) and all further preprocessing followed the same regression steps as specified for the main sample.  
-For all data, timeseries of neural activation were extracted from 200 nodes covering the entire cortex (5) that can be assigned to the Yeo 7/17 canonical systems (6).
+For the replication the data of The Amsterdam Open MRI Collection was downloaded in the minimal preprocessed (using fMRIPrep version 1.4.1) form and all further preprocessing followed the same regression steps as specified for the main sample.  
+For all data, timeseries of neural activation were extracted from 200 nodes covering the entire cortex (6) that can be assigned to the Yeo 7/17 canonical systems (7).
 ## 4. Structure and Script description
 ### Main analysis
 For the analysis done in the paper the scripts should be run in the following order:
@@ -82,10 +82,11 @@ Functions used in the scripts can be found in the `Functions` folder. Some of th
 ## References
 1.	D. C. Van Essen, et al., The WU-Minn Human Connectome Project: An overview. Neuroimage 80, 62–79 (2013).
 2.	L. Snoek, et al., The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses. Sci. Data 8, 85 (2021).
-3.	L. Parkes, B. Fulcher, M. Yücel, A. Fornito, An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting-state functional MRI. Neuroimage 171, 415–436 (2018).
-4.	M. W. Cole, et al., Task activations produce spurious but systematic inflation of task functional connectivity estimates. Neuroimage 189, 1–18 (2019).
-5.	A. Schaefer, et al., Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. Cereb. Cortex 28, 3095–3114 (2018).
-6.  T. B. T. Yeo, et al., The organization of the human cerebral cortex estimated by intrinsic functional connectivity. J. Neurophysiol. 106, 1125–1165 (2011).
+3.	M. F. Glasser, et al., The minimal preprocessing pipelines for the Human Connectome Project. Neuroimage 80, 105–124 (2013).
+4.	L. Parkes, B. Fulcher, M. Yücel, A. Fornito, An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting-state functional MRI. Neuroimage 171, 415–436 (2018).
+5.	M. W. Cole, et al., Task activations produce spurious but systematic inflation of task functional connectivity estimates. Neuroimage 189, 1–18 (2019).
+6.	A. Schaefer, et al., Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. Cereb. Cortex 28, 3095–3114 (2018).
+7.  T. B. T. Yeo, et al., The organization of the human cerebral cortex estimated by intrinsic functional connectivity. J. Neurophysiol. 106, 1125–1165 (2011).
 ## Copyright
 Copyright (cc) 2021 by Jonas Thiele
 

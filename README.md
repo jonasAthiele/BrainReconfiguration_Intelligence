@@ -11,7 +11,7 @@ All data used in the current study can be accessed online under: https://www.hum
 We used the minimally preprocessed HCP fMRI data (1) and implemented further preprocessing comprising a nuisance regression strategy with 24 head motion parameters, eight mean signals from white matter and cerebrospinal fluid, and four global signals (3). For task data, basis-set task regressors (4) were used simultaneously with the nuisance regressors to remove mean task-evoked activations.
 Code for the further preprocessing steps is available here: https://github.com/faskowit/app-fmri-2-mat
 For the replication the data of The Amsterdam Open MRI Collection was downloaded in the minimal preprocessed form (using fMRIPrep version 1.4.1) and all further preprocessing followed the same regression steps as specified for the main sample.  
-For all data, timeseries of neural activation were extracted from 200 nodes covering the entire cortex (5).
+For all data, timeseries of neural activation were extracted from 200 nodes covering the entire cortex (5) that can be assigned to the Yeo 7/17 canonical systems (6).
 ## 4. Structure and Script description
 ### Main analysis
 For the analysis done in the paper the scripts should be run in the following order:
@@ -85,7 +85,7 @@ Functions used in the scripts can be found in the `Functions` folder. Some of th
 3.	L. Parkes, B. Fulcher, M. Yücel, A. Fornito, An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting-state functional MRI. Neuroimage 171, 415–436 (2018).
 4.	M. W. Cole, et al., Task activations produce spurious but systematic inflation of task functional connectivity estimates. Neuroimage 189, 1–18 (2019).
 5.	A. Schaefer, et al., Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. Cereb. Cortex 28, 3095–3114 (2018).
-
+6.  T. B. T. Yeo, et al., The organization of the human cerebral cortex estimated by intrinsic functional connectivity. J. Neurophysiol. 106, 1125–1165 (2011).
 ## Copyright
 Copyright (cc) 2021 by Jonas Thiele
 

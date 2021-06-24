@@ -76,7 +76,7 @@ For the replication analysis done in the paper the scripts should be run in the 
 Functions used in the scripts can be found in the `Functions` folder. Some of the functions can be found elsewhere but are included here for convenience. Comments on the authorship and licenses of these functions are provided within the folder.
 
 ## 5. Software requirements
--	Matlab 2021a
+-	Matlab version 2021a
 -	R version 4.0.2
 
 ## References

@@ -14,7 +14,7 @@ For the replication, the data of The Amsterdam Open MRI Collection was downloade
 For all data, timeseries of neural activation were extracted from 200 nodes covering the entire cortex (7) that can be assigned to the Yeo 7/17 canonical systems (8).
 ## 4. Structure and Script description
 ### Main analysis
-For the analysis done in the paper the scripts should be run in the following order:
+For the analysis done in the paper, the scripts should be run in the following order:
 1.	`get_init_parameters` - Definition of parameters for analysis --> can be adapted for modifying the analysis (e.g. changing from 7 to 17 functional networks)
   
   
@@ -48,7 +48,7 @@ For the analysis done in the paper the scripts should be run in the following or
   
 ### Replication analysis
 
-For the replication analysis done in the paper the scripts should be run in the following order:
+For the replication analysis done in the paper, the scripts should be run in the following order:
 
 1.	`get_init_parameters_replication` - Script for defining parameters for analysis
 

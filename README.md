@@ -32,14 +32,14 @@ For the analysis done in the paper the scripts should be run in the following or
  
 6.	`get_reconfiguration_wholebrain` - Script for computing whole-brain reconfiguration scores, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step\
 \
-**and/or**\
+**or**\
 \
 `get_reconfiguration_networks` - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after the filtering step
 
 
 7.	`get_relation_recon_intell_wholebrain` (needs preceding `get_reconfiguration_wholebrain`) - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level\
 \
-**and/or**\
+**or**\
 \
 `get_relation_recon_intell_networks` (needs preceding `get_reconfiguration_networks`) - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
   
@@ -61,13 +61,13 @@ For the replication analysis done in the paper the scripts should be run in the 
 
 4.	`get_reconfiguration_wholebrain_replication` - Script for computing whole-brain reconfiguration scores, contains filtering of connections and computes reconfiguration between connections that remain after filtering step\
 \
-**and/or**\
+**or**\
 \
 `get_reconfiguration_networks_replication` - Script for computing within and between network reconfiguration, contains filtering of connections and computes reconfiguration between connections that remain after filtering step
 
 5.	`get_relation_recon_intell_wholebrain` (same script as in main analysis, needs preceding `get_reconfiguration_wholebrain_replication`) - Script for computing correlations between reconfiguration scores and intelligence scores on a whole-cortex level\
 \
-**and/or**\
+**or**\
 \
 `get_relation_recon_intell_networks` (same script as in main analysis, needs preceding `get_reconfiguration_networks_replication`) - Script for computing correlations between reconfiguration scores and intelligence scores on a network level
 

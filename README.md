@@ -1,7 +1,7 @@
 # BrainReconfiguration_Intelligence
 
 ## 1. Scope
-The repository contains scripts for the analysis used in the paper **"Multi-Task Brain Network Reconfiguration and its Inverse Association with General Intelligence"** coauthored by Jonas A. Thiele, Joshua Faskowitz, Olaf Sporns, and Kirsten Hilger (doi: coming soon after publication). Herein, the relation between general intelligence and the reconfiguration of functional brain connectivity is analyzed.
+The repository contains scripts for the analyses used in the paper **"Multi-Task Brain Network Reconfiguration and its Inverse Association with General Intelligence"** coauthored by Jonas A. Thiele, Joshua Faskowitz, Olaf Sporns, and Kirsten Hilger (doi: coming soon after publication). Herein, the relation between general intelligence and the reconfiguration of functional brain connectivity is analyzed.
 The scripts in this repository can be used to replicate the analyses of the paper or more generally, to study associations between individual differences (e.g., intelligence) and the reconfiguration of functional brain connectivity.
 If you have questions or trouble with the scripts, feel free to contact me: jonas.thiele@uni-wuerzburg.de
 ## 2. Data
